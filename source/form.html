@@ -1,19 +1,25 @@
 <!DOCTYPE html>
-<html class="form" lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
     <title>Подбор программы: Кэт энерджи</title>
   </head>
 
   <body class="form__body">
     <header class="main-header">
-      <a class="main-header__logo--mobile" href="index.html">
-        <img class="main-header__logo-image--mobile" src="../images/logo_mobile.svg" width="34" height="38" alt="Котик-логотип 'CAT ENERGY'">
+      <a class="main-header__logo" href="index.html">
+        <picture>
+          <source srcset="../images/logo-desktop.svg" media="(min-width: 1250px)">
+          <source srcset="../images/logo-tablet.svg" media="(min-width: 709px)">
+          <source srcset="../images/logo-mobile.svg">
+          <img class="main-header__logo-image" src="../images/logo-mobile.svg" width="34" height="38" alt="Котик-логотип 'CAT ENERGY'">
+        </picture>
       </a>
       <a class="main-header__logo-sign logo-sign" href="index.html">
         <img class="main-header_logo-sign-image" src="../images/logo_sign.svg" width="101" height="18" alt="Функциональное питание для котов 'CAT ENERGY'">
       </a>
-      <nav class="main-nav">
+      <nav class="main-header__main-nav">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -38,11 +44,10 @@
 
       <section class="questionaire">
         <h2 class="visually-hidden">Анкета</h2>
-        <div class="questionaire__cat-info cat-info">
-          <h3 class="visually-hidden">Информация о коте</h3>
-          <p class="cat-info__description">Заполните анкету, и мы подберем<br>
-          программу питания для вашего кота</p>
-          <form class="cat-info__form" action="#" method="get">
+        <form class="cat-info__form" action="https://echo.htmlacademy.ru" method="get">
+          <div class="questionaire__cat-info cat-info">
+            <h3 class="visually-hidden">Информация о коте</h3>
+            <p class="cat-info__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
             <label class="cat-info__field-sign">
               Имя:*<input type="text" name="cat-name" placeholder="Барсик">
             </label>
@@ -52,91 +57,91 @@
             <label class="cat-info__field-sign">
               Возраст (лет):<input type="text" name="cat-age" placeholder="7">
             </label>
-          </form>
-          <ul class="cat-info__purposes purposes">
-            <li class="purposes__item">
-              <label class="purposes__item-sign">
-                <input class="purposes__radio-button--active" type="radio" name="purpose" value="to-loose-weight" checked>Похудение
-              </label>
-            </li>
-            <li class="purposes__item">
-              <label class="purposes__item-sign">
-                <input class="purposes__radio-button" type="radio" name="purpose" value="to-gain-weight">Набор массы
-              </label>
-            </li>
-            <li class="purposes__item">
-              <label class="purposes__item-sign">
-                <input class="purposes__radio-button" type="radio" name="purpose" value="idk-advice-me">Не знаю (Нужен ваш совет)
-              </label>
-            </li>
-          </ul>
-        </div>
-        <div class="questionaire__owner-info owner-info">
-          <h3 class="owner-info__title">Контактные данные<br>
-          (владельца кота)</h3>
-          <form class="owner-info__form" action="#" method="get">
+            <ul class="cat-info__purposes purposes">
+              <li class="purposes__item">
+                <label class="purposes__item-sign">
+                  <input class="purposes__radio-button--active" type="radio" name="purpose" value="to-loose-weight" checked>
+                  <span class="purposes__radio-button-sign">Похудение</span>
+                </label>
+              </li>
+              <li class="purposes__item">
+                <label class="purposes__item-sign">
+                  <input class="purposes__radio-button" type="radio" name="purpose" value="to-gain-weight">
+                  <span class="purposes__radio-button-sign">Набор массы</span>
+                </label>
+              </li>
+              <li class="purposes__item">
+                <label class="purposes__item-sign">
+                  <input class="purposes__radio-button" type="radio" name="purpose" value="idk-advice-me">
+                  <span class="purposes__radio-button-sign">Не знаю (Нужен ваш совет)</span>
+                </label>
+              </li>
+            </ul>
+          </div>
+          <div class="questionaire__owner-info owner-info">
+            <h3 class="owner-info__title">Контактные данные (владельца кота)</h3>
             <label class="owner-info__field-sign">
               E-mail:*<input type="email" name="e-mail" placeholder="kuklachev@gmail.com">
             </label>
             <label class="owner-info__field-sign">
               Телефон:*<input type="tel" name="phone-number" placeholder="8 (960) 900-60-90">
             </label>
-          </form>
-        </div>
-        <div class="questionaire__commentary commentary">
-          <h3 class="commentary__title">Комментарий</h3>
-          <form class="commentary__area" action="#" method="get">
+          </div>
+          <div class="questionaire__commentary commentary">
+            <h3 class="commentary__title">Комментарий</h3>
             <input class="commentary__field" type="text" name="commentary-about-cat" placeholder="Расскажите обо всех повадках кота">
-          </form>
+          </div>
+          <div class="questionaire__additional-products additional-products">
+            <h3 class="additional-products__title">Дополнительно</h3>
+            <ul class="additional-products__list">
+              <li class="additional-products__item">
+                <label class="additional-products__item-sign">
+                  <input class="additional-products__check-box--active" type="checkbox" name="additional-product" value="sweetener" checked>
+                  <span class="additional-products__check-box-sign">Сахарозаменитель</span>
+                </label>
+              </li>
+              <li class="additional-products__item">
+                <label class="additional-products__item-sign">
+                  <input class="additional-products__check-box" type="checkbox" name="additional-product" value="water">
+                  <span class="additional-products__check-box-sign">Питьевая вода</span>
+                </label>
+              </li>
+              <li class="additional-products__item">
+                <label class="additional-products__item-sign">
+                  <input class="additional-products__check-box--active" type="checkbox" name="additional-product" value="milk">
+                  <span class="additional-products__check-box-sign">Молоко</span>
+                </label>
+              </li>
+              <li class="additional-products__item">
+                <label class="additional-products__item-sign">
+                  <input class="additional-products__check-box--active" type="checkbox" name="additional-product" value="vitamins">
+                  <span class="additional-products__check-box-sign">Витамины</span>
+                </label>
+              </li>
+            </ul>
+          </div>
+          <div class="questionaire__button-wrapper">
+            <button class="sending-button" type="submit">
+              <span class="sending-button__sign button-sign">Отправить заявку</span>
+            </button>
+            <p class="questionaire__explanation">* — Обязательные поля</p>
+          </div>
+        </form>
+      </section>
+
+      <section class="contact-with-us">
+        <h2 class="visually hidden">Местоположение</h2>
+        <div class="invintation-to-cooperate">
+          <p class="invintation-to-cooperate__text">Приглашаем к сотрудничеству дилеров!</p>
         </div>
-        <div class="questionaire__additional-products additional-products">
-          <h3 class="additional-products__title">Дополнительно</h3>
-          <ul class="additional-products__list">
-            <li class="additional-products__item">
-              <label class="additional-products__item-sign">
-                <input class="additional-products__check-box--active" type="checkbox" name="additional-product" value="sweetener" checked>Сахарозаменитель
-              </label>
-            </li>
-            <li class="additional-products__item">
-              <label class="additional-products__item-sign">
-                <input class="additional-products__check-box" type="checkbox" name="additional-product" value="water">Питьевая вода
-              </label>
-            </li>
-            <li class="additional-products__item">
-              <label class="additional-products__item-sign">
-                <input class="additional-products__check-box--active" type="checkbox" name="additional-product" value="milk">Молоко
-              </label>
-            </li>
-            <li class="additional-products__item">
-              <label class="additional-products__item-sign">
-                <input class="additional-products__check-box--active" type="checkbox" name="additional-product" value="vitamins">Витамины
-              </label>
-            </li>
-          </ul>
-        </div>
-        <div class="questionaire__button-wrapper">
-          <button class="sending-button" type="button">
-            <span class="sending-button__sign button-sign">Отправить заявку</span>
-          </button>
-          <p class="questionaire__explanation">* — Обязательные поля</p>
+        <div class="location">
+          <p class="location__adress">ул. Большая Конюшенная, д. 19/8</p>
+          <p class="location__city">Санкт-Петербург</p>
         </div>
       </section>
     </main>
 
     <footer class="main-footer">
-      <section class="contact-with-us">
-        <h2 class="visually hidden">Местоположение</h2>
-        <div class="invintation-to-cooperate">
-          <p class="invintation-to-cooperate__text">Приглашаем<br>
-          к сотрудничеству<br>
-          дилеров!</p>
-        </div>
-        <div class="location">
-          <p class="location__adress">ул. Большая<br>
-          Конюшенная, д. 19/8</p>
-          <p class="location__city">Санкт-Петербург</p>
-        </div>
-      </section>
       <a class="main-footer__logo-sign logo-sign" href="index.html">
         <img class="main-footer_logo-sign-image" src="../images/logo_sign.svg" width="128" height="24" alt="Функциональное питание для котов 'CAT ENERGY'">
       </a>
