@@ -6,29 +6,33 @@
     <title>Каталог товаров: Кэт энерджи</title>
   </head>
 
-  <body class="catalog__body">
+  <body class="page__body">
     <header class="main-header">
-      <a class="main-header__logo" href="index.html">
-        <picture>
-          <source srcset="../images/logo-desktop.svg" media="(min-width: 1250px)">
-          <source srcset="../images/logo-tablet.svg" media="(min-width: 709px)">
-          <source srcset="../images/logo-mobile.svg">
-          <img class="main-header__logo-image" src="../images/logo-mobile.svg" width="34" height="38" alt="Котик-логотип 'CAT ENERGY'">
+      <a class="main-header__logo logo" href="index.html">
+        <picture class="logo__variants">
+          <source class="logo__image" srcset="../images/logo-desktop.svg" media="(min-width: 1250px)">
+          <source class="logo__image" srcset="../images/logo-tablet.svg" media="(min-width: 709px)">
+          <source class="logo__image" srcset="../images/logo-mobile.svg">
+          <img class="logo__image" src="../images/logo-mobile.svg" width="34" height="38" alt="Котик-логотип 'CAT ENERGY'">
         </picture>
       </a>
-      <a class="main-header__logo-sign" href="index.html">
-        <img class="main-header_logo-sign-image" src="../images/logo_sign.svg" width="101" height="18" alt="Функциональное питание для котов 'CAT ENERGY'">
+      <a class="main-header__logo-sign logo-sign" href="index.html">
+        <picture class="logo-sign__variants">
+          <source class="visually-hidden" srcset="none" media="(min-width: 709px)">
+          <source srcset="../images/logo-sign.svg">
+          <img class="logo-sign__header-image" src="../images/logo-sign.svg" width="101" height="18" alt="Функциональное питание для котов 'CAT ENERGY'">
+        </picture>
       </a>
-      <nav class="main-header__main-nav">
+      <nav class="main-header__main-nav main-nav">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item">
+            <li class="site-list__item site-list__item--active">
               <a href="index.html">Главная</a>
             </li>
-            <li class="site-list__item--active">
+            <li class="site-list__item">
               <a>Каталог продукции</a>
             </li>
             <li class="site-list__item">
@@ -227,7 +231,7 @@
 
     <footer class="main-footer">
       <a class="main-footer__logo-sign logo-sign" href="index.html">
-        <img class="main-footer_logo-sign-image" src="../images/logo_sign.svg" width="128" height="24" alt="Функциональное питание для котов 'CAT ENERGY'">
+        <img class="logo-sign__image" src="../images/logo_sign.svg" width="128" height="24" alt="Функциональное питание для котов 'CAT ENERGY'">
       </a>
       <ul class="social-media">
         <li class="social-media__item">
