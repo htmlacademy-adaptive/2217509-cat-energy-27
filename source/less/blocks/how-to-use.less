@@ -1,0 +1,97 @@
+.how-to-use {
+  padding-bottom: 49px;
+  margin: 0;
+  &__heading {
+    display: block;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 40px;
+    text-align: left;
+    margin: 0;
+    padding-bottom: 40px;
+  };
+  &__wrapper {
+    width: 279px;
+    z-index: 1;
+    margin: 0 auto;
+  };
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    z-index: 2;
+    & li:first-child::before {
+      content: ' ';
+      display: block;
+      position: absolute;
+      background-image: url(../../images/leaf-icon.svg);
+      background-color: #68B738;
+      background-size: 30px 32px;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 60px;
+      height: 60px;
+      z-index: 4;
+      left: 0;
+      top: -1px;
+    };
+    & li:nth-child(2)::before {
+      content: ' ';
+      display: block;
+      position: absolute;
+      background-image: url(../../images/boiling-water-icon.svg);
+      background-color: #68B738;
+      background-size: 26px 29px;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 60px;
+      height: 60px;
+      z-index: 4;
+      left: 0;
+      top: -1px;
+    };
+    & li:nth-child(3)::before {
+      content: ' ';
+      display: block;
+      position: absolute;
+      background-image: url(../../images/fork-and-knife-icon.svg);
+      background-color: #68B738;
+      background-size: 25px 30px;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 60px;
+      height: 60px;
+      z-index: 4;
+      left: 0;
+      top: -1px;
+    };
+    & li:last-child::before {
+      content: ' ';
+      display: block;
+      position: absolute;
+      background-image: url(../../images/alarm-icon.svg);
+      background-color: #68B738;
+      background-size: 26px 31px;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 60px;
+      height: 60px;
+      z-index: 4;
+      left: 0;
+      top: -1px;
+    }
+  };
+  &__tips {
+    display: block;
+    position: relative;
+    font-family: "Lato";
+    font-weight: 400px;
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 20px;
+    padding-left: 80px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    z-index: 3;
+  }
+}
