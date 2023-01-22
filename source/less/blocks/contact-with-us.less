@@ -1,0 +1,38 @@
+.contact-with-us {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  background-color: #FFFFFF;
+  &-footer {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #F2F2F2;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    margin: 0;
+    padding: 26px 20px 388px;
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      box-sizing: border-box;
+      background-image: url(../../images/background-images/map-with-pin-mobile.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 320px;
+      height: 362px;
+      top: 112px;
+    }
+  };
+  &__invintation-to-cooperate {
+    margin: 0;
+    padding-right: 2px;
+    font-size: 16px;
+    line-height: 20px;
+    color: #111111;
+  }
+}
